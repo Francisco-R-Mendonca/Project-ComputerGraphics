@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.176.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.176.0/examples/jsm/"
+        }
+      }
+      </script>
+    <title>Trabalho C - Grupo 04</title>
+  </head>
+
+  <body>
+    <div id="hud">
+        <h2 class="hud-title">Pepper Ghost HUD</h2>
+
+        <div class="hud-section">
+            <div class="section-title">Modelos</div>
+
+            <div class="keyrow">
+                <button id="model1" class="key hud-button">T</button>
+                <button id="model2" class="key hud-button">A</button>
+                <button id="model3" class="key hud-button">R</button>
+            </div>
+
+            <div class="description">
+                T: Tesseract · A: Animal · R: Artemis
+            </div>
+        </div>
+
+        <div class="hud-section">
+            <div class="section-title">Materiais</div>
+
+            <div class="keyrow">
+                <button id="matLambert" class="key hud-button small-key">L</button>
+                <button id="matPhong" class="key hud-button small-key">P</button>
+                <button id="noLigthing" class="key hud-button small-key">NL</button>
+            </div>
+
+            <div class="description">
+                L: Lambert · P: Phong · NL: Sem iluminação
+            </div>
+        </div>
+
+        <div class="hud-section">
+            <div class="section-title">Luzes</div>
+
+            <div class="keyrow">
+                <button id="dirLight" class="key hud-button small-key">D</button>
+                <button id="pointLights" class="key hud-button small-key">P</button>
+                <button id="spotLights" class="key hud-button small-key">S</button>
+            </div>
+
+            <div class="description">
+                D: direcional · P: pontuais · S: spotlights
+            </div>
+        </div>
+
+        <div class="hud-section">
+            <div class="section-title">Sistema</div>
+
+            <div class="keyrow">
+                <button id="anaglyph" class="key hud-button small-key">3D</button>
+            </div>
+
+            <div class="description">
+                3D: ligar/desligar anaglifo
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main-script.js"></script>
+</body>
+</html>

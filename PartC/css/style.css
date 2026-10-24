@@ -1,0 +1,139 @@
+body {
+    margin: 0px;
+    background-color: black;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+}
+
+.key { 
+  display: flex;
+  width: 48px;
+  height: 48px;
+
+  background: linear-gradient(to left top, PapayaWhip, #e7cda7);
+  align-items: center;
+  justify-content: center;
+  border: 3px outset PapayaWhip;
+  border-radius: 7px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+
+  box-sizing: border-box;
+}
+
+.keyrow {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.small-key {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+}
+
+.tiny-key {
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
+}
+
+#hud {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    z-index: 10;
+    pointer-events: auto;
+    user-select: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hud-title {
+    margin: 0 0 2px 0;
+
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+}
+
+.hud-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.section-title {
+    margin: 5px 0 2px 0;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+
+    color: #ffd166;
+    text-shadow: 1px 1px 2px black;
+}
+
+.description {
+    margin-top: 2px;
+
+    font-size: 10px;
+    color: #e8f1ff;
+
+    text-shadow: 1px 1px 2px black;
+}
+
+.hud-button {
+    cursor: pointer;
+    touch-action: manipulation;
+    padding: 0;
+}
+
+.hud-button.active {
+    padding: 3px 0px 0px 3px;
+    border-style: inset;
+
+    background: linear-gradient(to left top, Moccasin, #efc06e);
+    border-color: #f8e2bc;
+}
+
+.hud-button:hover {
+    background: linear-gradient(to left top, Moccasin, #efc06e);
+}
+
+.hud-button.active {
+    padding: 3px 0px 0px 3px;
+    border-style: inset;
+
+    background: linear-gradient(to left top, Moccasin, #efc06e);
+    border-color: #f8e2bc;
+}
+
+.hud-button:focus {
+    outline: none;
+}
+
+.hud-button:active {
+    padding: 3px 0px 0px 3px;
+    border-style: inset;
+
+    background: linear-gradient(to left top, Moccasin, #efc06e);
+    border-color: #f8e2bc;
+}
+
+
+

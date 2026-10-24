@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trabalho B - Grupo 04</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@v0.163.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/",
+                "stats.js": "https://cdn.jsdelivr.net/npm/stats.js@0.17.0/src/Stats.js",
+                "gltfexporter":"https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/exporters/GLTFExporter.js"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="hud">
+    <h2 class="hud-title">DroneWatch HUD</h2>
+
+    <div class="hud-section">
+        <div class="section-title">Movimento</div>
+
+        <div class="keyboard-block">
+            <div class="wasd-grid">
+                <div></div>
+                <div id="key-W" class="key">W</div>
+                <div></div>
+
+                <div id="key-A" class="key">A</div>
+                <div id="key-S" class="key">S</div>
+                <div id="key-D" class="key">D</div>
+            </div>
+        </div>
+
+        <div class="description">
+            W/S: subir e descer · A/D: esquerda e direita
+        </div>
+    </div>
+
+    <div class="hud-section">
+        <div class="section-title">Frente / Trás</div>
+
+        <div class="keyboard-block small-block">
+            <div class="keyrow">
+                <div id="key-U" class="key small-key">U</div>
+                <div id="key-J" class="key small-key">J</div>
+            </div>
+        </div>
+
+        <div class="description">
+            U: avançar · J: recuar
+        </div>
+    </div>
+
+    <div class="hud-section">
+        <div class="section-title">Rotação</div>
+
+        <div class="keyboard-block small-block">
+            <div class="keyrow">
+                <div id="key-I" class="key small-key">I</div>
+                <div id="key-K" class="key small-key">K</div>
+                <div id="key-O" class="key small-key">O</div>
+                <div id="key-L" class="key small-key">L</div>
+            </div>
+        </div>
+
+        <div class="description">
+            I/K: rotação no eixo Y · O/L: rotação no eixo Z
+        </div>
+    </div>
+
+    <div class="hud-section">
+        <div class="section-title">Sistema</div>
+
+        <div class="keyboard-block small-block">
+            <div class="keyrow">
+                <div id="key-Q" class="key small-key">Q</div>
+                <div id="key-H" class="key small-key">H</div>
+                <div id="key-7" class="key small-key">7</div>
+            </div>
+        </div>
+
+        <div class="description">
+            Q: abrir/fechar · H: helpers · 7: wireframe
+        </div>
+    </div>
+
+    <div class="hud-section">
+        <div class="section-title">Câmaras</div>
+
+        <div class="keyboard-block small-block">
+            <div class="keyrow">
+                <div id="key-1" class="key tiny-key">1</div>
+                <div id="key-2" class="key tiny-key">2</div>
+                <div id="key-3" class="key tiny-key">3</div>
+                <div id="key-4" class="key tiny-key">4</div>
+                <div id="key-5" class="key tiny-key">5</div>
+                <div id="key-6" class="key tiny-key">6</div>
+            </div>
+        </div>
+
+        <div class="description">
+            1-6: alternar entre câmaras
+        </div>
+    </div>
+</div>
+
+    <script type="module" src="js/main-script.js"></script>
+</body>
+
+</html>
